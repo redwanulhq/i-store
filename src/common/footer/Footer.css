@@ -1,0 +1,39 @@
+footer {
+    background-color: #282828;
+    color: #aaaaaa;
+    font-size: 15px;
+    font-weight: 200;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0px;
+}
+footer a {
+    color: #aaaaaa;
+    display: inline-block;
+    padding: 0 10px;
+    transition: 0.3s;
+}
+footer a:hover {
+    color: #eee;
+}
+span.copyright a {
+    padding: 0;
+}
+
+@media (max-width: 850px) {
+    footer .container {
+        display: block;
+    }
+}
+@media (max-width: 550px) {
+    footer a {
+        display: block;
+        padding: 7px 10px;
+    }
+    span.copyright {
+        display: none;
+    }
+}

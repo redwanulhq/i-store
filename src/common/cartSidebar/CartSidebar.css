@@ -1,0 +1,169 @@
+.cart-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: #d9d9d9a1;
+  display: none;
+}
+.cart-modal-overlay.true {
+  display: block;
+}
+.cart-sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  max-width: 400px;
+  background-color: #333333;
+  width: 100%;
+  height: 100%;
+  color: white;
+  z-index: 100000;
+  transform: translateX(400px);
+  transition: 0.5s;
+}
+.cart-sidebar.true {
+  transform: translateX(0px);
+}
+.cart-sidebar-container {
+  padding: 0 30px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 80px auto 170px;
+}
+
+.cart-sidebar-header {
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #464646;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  z-index: 10000000;
+  cursor: pointer;
+}
+.cart-sidebar-header:hover svg {
+  color: #fff;
+}
+.cart-sidebar-header svg {
+  font-size: 30px;
+  color: #b9b9b9;
+  transition: 0.3s;
+}
+.cart-sidebar-scrollable-container {
+  height: calc(100vh - 250px);
+  overflow-y: auto;
+}
+.cart-sidebar-scrollable-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.cart-sidebar-single-product {
+  display: flex;
+  padding: 7px;
+  border-bottom: 1px solid #464646;
+}
+.cart-sidebar-single-product:last-child {
+  border: none;
+}
+.cart-sidebar-product-img {
+  height: 70px;
+  width: 70px;
+  overflow: hidden;
+  background-color: #464646;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.cart-sidebar-product-img img {
+  width: 100%;
+}
+.cart-sidebar-product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 0 5px 10px;
+}
+.cart-sidebar-product-quantity-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 200;
+  font-size: 15px;
+}
+.product-quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.product-quantity-container > span {
+  display: block;
+}
+.product-quantity-btns {
+  display: flex;
+}
+
+.product-quantity-btns span {
+  cursor: pointer;
+  color: #ddd;
+  font-size: 22px;
+  display: flex;
+}
+
+.product-quantity-btns input {
+  width: 35px;
+  height: 22px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: #ddd;
+}
+.product-quantity-btns input:focus {
+  outline: none;
+  color: white;
+}
+
+.cart-sidebar-product-name-container {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-sidebar-product-name-container svg {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.cart-sidebar-footer {
+  width: 100%;
+  background-color: #333333;
+}
+.cart-subtotal {
+  border-top: 1px solid #464646;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 200;
+}
+.cart-update-btn {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border: 1px solid #464646;
+}
+.cart-chekout-btn {
+  background-color: #111;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 200;
+}

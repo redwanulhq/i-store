@@ -1,0 +1,109 @@
+.single-product-section {
+    background-color: #f3f3f3;
+}
+.single-product-container {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    padding: 100px 15px;
+    background-color: #f3f3f3;
+}
+.single-product-img-container {
+    padding: 0 50px;
+}
+.single-product-img-container img {
+    max-width: 100%;
+}
+.atc-name-heart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.atc-name-heart span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #222;
+    font-size: 27px;
+}
+.atc-name-heart .product-name {
+    font-weight: 400;
+    color: #222;
+}
+.add-to-cart-container .product-price {
+    font-size: 35px;
+    margin: 10px 0;
+    color: #222;
+}
+.quantity-and-btn {
+    max-width: 400px;
+    margin-top: 15px;
+}
+.product-quantity {
+    display: flex;
+    justify-content: center;
+    padding: 4px 0;
+    align-items: center;
+}
+.product-quantity span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button.add-to-cart {
+    border: none;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 16px 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+.product-quantity input {
+    display: inline-block;
+    line-height: 42px;
+    width: 26px;
+    height: 42px;
+    vertical-align: top;
+    padding: 0;
+    border: 0 none;
+    text-align: center;
+    background: none;
+    font-size: 18px;
+}
+
+.product-quantity input:focus {
+    outline: none;
+}
+.product-quantity span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+@media (max-width: 1000px) {
+    .quantity-and-btn {
+        max-width: 100%;
+    }
+    .single-product-container {
+        grid-gap: 20px;
+    }
+    .single-product-img-container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .single-product-container {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 80px;
+        padding: 100px 15px;
+        background-color: #f3f3f3;
+    }
+}

@@ -1,0 +1,94 @@
+header {
+  background-color: white;
+  color: #686868;
+  box-shadow: 0 0 3px #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+header.true {
+  background-color: #444 !important;
+  color: white;
+}
+header .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 74px;
+}
+.toggle span {
+  display: flex;
+}
+.toggle svg {
+  font-size: 32px;
+}
+.logo {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.logo a {
+  color: #444;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-item {
+  margin-left: 25px;
+}
+.nav-item span,
+.toggle span {
+  cursor: pointer;
+}
+.nav-item span {
+  display: flex;
+}
+nav svg {
+  font-size: 23px;
+}
+.nav-item.shopping-cart {
+  position: relative;
+}
+.shopping-cart-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #5953bb;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Header menu */
+
+.header-menu {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 0;
+  padding-right: 10px;
+}
+.header-menu {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 0;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.header-menu a {
+  color: #333;
+  padding-left: 25px;
+}

@@ -1,0 +1,30 @@
+section.single-page-desc {
+    margin: 50px 0;
+}
+.desc-review-tab-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.desc-review-tab-container p {
+    font-size: 20px;
+    color: #222;
+}
+.desc-review-tab-container p > span {
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+    padding: 0px 5px;
+}
+.desc-review-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+span.active {
+    border-bottom: 2px solid #333;
+}
+.css-whxibi-MuiBadge-badge {
+    border: 1px solid;
+}
